@@ -1,0 +1,635 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eee;
+    width: 100%;
+    box-shadow: 1px 1px 25px rgba(1, 1, 1, 20%);
+    height: 60px;
+    z-index: 100;
+}
+
+header .logo i {
+    color: #fca311;
+}
+
+header .logo {
+    padding: 0px 200px 0px 190px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+header .logo a {
+    text-decoration: none;
+    color: red;
+}
+
+
+nav ul {
+    list-style: none;
+    margin-right: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 10px;
+
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: #fca311;
+    font-size: 1.5em;
+}
+
+nav a:hover {
+    transform: scale(1.1);
+    transition: .5s;
+    border-bottom: 1px red solid;
+    color: red;
+}
+
+.home {
+    width: 100%;
+    height: 100vb;
+    background-color: #a9a9a94d;
+
+}
+
+.main {
+    padding: 280px 200px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.main h2 {
+    font-size: 3em;
+}
+
+.word {
+    color: red;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+.main p {
+    line-height: 3;
+    font-size: 1.1em;
+
+}
+
+
+.main_img {
+    background: url(photos/—Pngtree—creative\ burger\ exaggerated\ delicious\ food_9072186.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    right: 60px;
+    top: 100px;
+    animation: rotate 15s linear infinite alternate;
+
+
+}
+
+.main_img:active {
+    background: url(photos/Screenshot__35_-removebg-preview.png);
+    transition: 3s;
+    /* transition-timing-function: linear; */
+    animation-play-state: paused;
+    background-repeat: no-repeat;
+    background-position-y: 50px;
+}
+
+@keyframes rotate {
+    form {
+        transform: scale3d(1.1, 1, 1);
+
+    }
+
+    to {
+        transform: scale3d(1.2, 1, 0);
+
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.main_btn {
+    background-color: #a9a9a929;
+    position: absolute;
+    top: 30em;
+    left: 12.5em;
+    width: 150px;
+    height: fit-content;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 1px 1px 20px 0px white;
+}
+
+.main_btn a {
+    font-size: 1.4em;
+    text-align: center;
+    font-weight: 600;
+    color: #fca311;
+}
+
+.main_btn:hover {
+    transform: scale(1.1);
+    transition: .5s;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+    box-shadow: 1px 1px 20px 0px #fca311;
+
+}
+
+.menu_btn {
+    position: absolute;
+    top: 0;
+    left: 13em;
+}
+
+/* الصفحة التانية */
+
+.menu {
+    width: 100%;
+    height: 100vb;
+    position: relative;
+}
+
+.back_g {
+    width: 100%;
+    height: 100vb;
+    background-image: url(photos/صورة\ خلفية\ برجر\ هاوس.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(.3);
+    position: absolute;
+}
+
+
+
+.title {
+    font-size: 68px;
+    font-weight: 900;
+    color: #fca311;
+    text-shadow: 1px 2px 5px white;
+    text-align: center;
+    padding-top: 70px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1.5pc;
+}
+
+.main_menu {
+    height: 100vb;
+}
+
+.menu_img {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 120px;
+    background-color: transparent;
+
+}
+
+.menu_img img {
+    width: 20%;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px 0px rgb(0, 0, 0);
+    position: relative;
+    top: -40px;
+    /* animation: img infinite 10s; */
+}
+
+/* @keyframes img{
+    form{
+        transform: scale(1);
+    }
+    to{
+        transform: scale3d(1.5,1.2,1);
+
+    }
+} */
+
+.menu_img img:hover {
+    /* animation-play-state: paused; */
+    width: 900px;
+    height: 380px;
+    box-shadow: 1px 1px 15px 0px white;
+    transition: 2s;
+    filter: brightness(1.1);
+}
+
+
+
+.downloud {
+    position: relative;
+    top: -210px;
+    margin: auto;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px 20px;
+    width: fit-content;
+    opacity: .6;
+}
+
+.downloud a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+
+.downloud:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    transition: .5s;
+    font-weight: 800;
+}
+
+/* الصفحة التالته  */
+
+.contact {
+    width: 100%;
+    height: 100vb;
+    background-color: #a9a9a94d;
+    animation: hid 5s linear;
+
+}
+
+.all_cont {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+
+}
+
+.map {
+    width: 600px;
+    height: 440px;
+    border: 1px black solid;
+    border-radius: 10px;
+}
+
+.map img {
+    width: 600px;
+    height: 360px;
+    border-radius: 10px;
+}
+
+.map img:hover {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    box-shadow: 1px 1px 15px 1px black;
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.map div {
+    text-align: center;
+    width: 350px;
+    height: fit-content;
+    padding: 12px;
+    border-radius: 12px;
+    margin: auto;
+    margin-top: 10px;
+
+
+}
+
+.map a {
+    font-size: 25px;
+    text-decoration: none;
+    color: red;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+}
+
+.map a:hover {
+    border-bottom: #fca311 solid 1px;
+    background-color: #a9a9a929;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+.map div i {
+    color: #fca311;
+    margin: 0px 10px;
+    font-size: 20px;
+}
+
+.social {
+    width: 600px;
+    height: 440px;
+    position: relative;
+    text-align: center;
+}
+
+.social .icons {
+    width: 100px;
+    height: 300px;
+    position: relative;
+    top: 12%;
+    left: 0%;
+}
+
+.social .icons a {
+    font-size: 60px;
+    color: #0d6583;
+    letter-spacing: 30px;
+    display: block;
+    margin-bottom: 40px;
+
+
+}
+
+.social .icons a:hover {
+    /* transition: .5s; */
+    color: blue;
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.social .icons a:hover::after {
+    content: attr(data-soc);
+    width: 20px;
+    font-size: 30px;
+    letter-spacing: 0;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    height: 0;
+    position: relative;
+    top: -80px;
+    left: 80px;
+    transform: scale(1.2);
+    transition: 2s;
+}
+
+.social .phone {
+    background-color: #eee;
+    position: relative;
+    top: -190px;
+    left: 260px;
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 25px 0px rgba(0, 0, 0, 0.21);
+}
+
+.social .phone:hover {
+    transform: scale(1.1);
+    transition: .5s;
+
+}
+
+.social .phone i {
+    font-size: 70px;
+    color: #118ab2;
+    padding-top: 40px;
+}
+
+.social .phone p {
+    font-size: 25px;
+}
+
+.social .phone a {
+    font-size: 20px;
+    padding-top: 5px;
+    border-bottom: 1px #118ab2 solid;
+}
+
+@media (max-width: 450px) {
+
+
+    header {
+        display: block;
+        height: 55px;
+    }
+
+    header .logo {
+        padding: 0;
+        font-size: 19px;
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        margin: auto;
+        text-align: center;
+
+    }
+
+    header .logo i {
+        /* display: none; */
+        font-size: 22px;
+        padding-right: 10px;
+    }
+
+    nav ul {
+        width: fit-content;
+        margin: auto;
+    }
+
+    nav a {
+        font-size: 1em;
+    }
+
+    .home {
+        width: 100%;
+        overflow: hidden;
+
+
+
+    }
+
+    .main {
+        font-size: .7em;
+        text-align: center;
+        position: relative;
+        top: 75px;
+        width: fit-content;
+        margin: auto;
+        padding: 0px 12px 0px 12px;
+
+    }
+
+
+
+    .main_img {
+        width: 185px;
+        height: 200px;
+        position: relative;
+        top: 65px;
+        left: 50%;
+        transform: translateX(-50%);
+        animation: none;
+    }
+
+    .main_img:active {
+        background-size: 80%;
+    }
+
+
+    .main_btn {
+        width: 80px;
+        font-size: .6em;
+        position: relative;
+        top: 100px;
+        left: 30%;
+        transform: translateX(-50%);
+    }
+
+    .menu_btn {
+        width: 80px;
+        font-size: 1em;
+        position: relative;
+        top: -43px;
+        left: 73%;
+        transform: translateX(-50%);
+    }
+
+    .main_btn:hover {
+        position: relative;
+        transform: translateX(-50%);
+    }
+
+    /* ............ */
+    .menu_img {
+        width: 100%;
+        height: 500px;
+        flex-direction: column;
+        top: -10px;
+
+    }
+
+    .menu_img img {
+        top: 0;
+        width: 55%;
+        height: 150px;
+        margin: auto;
+    }
+
+    .menu_img img:hover {
+        width: 90%;
+        height: 45%;
+        z-index: 20000;
+    }
+
+    .downloud {
+        top: -335px;
+        width: 100px;
+        text-align: center;
+        padding: 1px;
+    }
+
+    /* ............. */
+
+    .contact {
+        overflow: hidden;
+    }
+
+    .title {
+        font-size: 1.5em;
+        letter-spacing: 10px;
+    }
+
+    .all_cont {
+        padding: 0px 12px 0px 12px;
+        display: block;
+
+    }
+
+    .map {
+        width: 300px;
+        height: 200px;
+        margin: auto;
+
+    }
+
+    .map img {
+        width: 298px;
+        height: 160px;
+
+    }
+
+
+    .map div {
+        padding: 0px;
+        width: 100%;
+
+    }
+
+    .map div i,
+    .map div a {
+        font-size: 14px;
+        letter-spacing: 4px;
+    }
+
+    .social {
+        width: fit-content;
+        height: 50px;
+        margin: auto;
+
+
+
+    }
+
+    .social .icons {
+        display: flex;
+        justify-content: center;
+        left: 10px;
+        height: fit-content;
+        margin: auto;
+    }
+
+    .social .icons a {
+        margin-top: 8px;
+        width: fit-content;
+        height: fit-content;
+        font-size: 30px;
+
+    }
+
+    .social .icons a:hover::after {
+        font-size: 14px;
+        top: -10px;
+        left: -13px;
+    }
+
+    .social .phone {
+        top: 0;
+        left: 0;
+        width: 150px;
+        height: 100px;
+    }
+
+    .social .phone i {
+        padding-top: 10px;
+        font-size: 30px;
+    }
+
+    .social .phone p {
+        font-size: 15px;
+    }
+
+    .social .phone a {
+        font-size: 15px;
+    }
+}
