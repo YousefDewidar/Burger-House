@@ -417,44 +417,54 @@ a {
     border-bottom: 1px #118ab2 solid;
 }
 
+/*  */
 @media (max-width: 450px) {
-
 
     header {
         display: block;
-        height: 55px;
+        height: 90px;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
     }
 
     header .logo {
         padding: 0;
-        font-size: 19px;
-        display: flex;
-        align-items: center;
-        width: fit-content;
+        font-size: 25px;
+        /* display: flex; */
+        /* align-items: center; */
+        /* width: fit-content; */
         margin: auto;
         text-align: center;
 
     }
 
     header .logo i {
-        /* display: none; */
-        font-size: 22px;
+        display: block;
+        font-size: 26px;
         padding-right: 10px;
+        margin-top: 5px;
     }
 
     nav ul {
         width: fit-content;
         margin: auto;
+        line-height: .2;
+
     }
 
+
     nav a {
-        font-size: 1em;
+        font-size: 20px;
+    }
+
+    nav a:hover {
+        border: none;
     }
 
     .home {
         width: 100%;
         overflow: hidden;
-
+        /* height: 800px; */
 
 
     }
@@ -466,43 +476,55 @@ a {
         top: 75px;
         width: fit-content;
         margin: auto;
-        padding: 0px 12px 0px 12px;
+        padding: 20px 12px 0px 12px;
 
     }
 
+    .main p {
+        font-size: 15px;
+    }
 
 
     .main_img {
-        width: 185px;
-        height: 200px;
+        width: 400px;
+        height: 350px;
         position: relative;
         top: 65px;
         left: 50%;
         transform: translateX(-50%);
         animation: none;
+
+        margin-top: 80px;
     }
 
-    .main_img:active {
+    .main_img:hover {
+        background: url(photos/Screenshot__35_-removebg-preview.png);
+        transition: 3s;
+        /* transition-timing-function: linear; */
+        animation-play-state: paused;
+        background-repeat: no-repeat;
+        background-position-y: 50px;
+        background-position-x: 10px;
         background-size: 80%;
     }
 
-
     .main_btn {
-        width: 80px;
-        font-size: .6em;
+        width: 140px;
+        height: 40px;
+        font-size: 16px;
         position: relative;
         top: 100px;
         left: 30%;
-        transform: translateX(-50%);
+        transform: translateX(-55%);
+
     }
 
     .menu_btn {
-        width: 80px;
-        font-size: 1em;
         position: relative;
-        top: -43px;
+        top: -63px;
         left: 73%;
-        transform: translateX(-50%);
+        transform: translateX(-30%);
+
     }
 
     .main_btn:hover {
@@ -513,9 +535,10 @@ a {
     /* ............ */
     .menu_img {
         width: 100%;
-        height: 500px;
+        height: 700px;
         flex-direction: column;
-        top: -10px;
+        top: -1px;
+
 
     }
 
@@ -528,12 +551,12 @@ a {
 
     .menu_img img:hover {
         width: 90%;
-        height: 45%;
+        height: 80%;
         z-index: 20000;
     }
 
     .downloud {
-        top: -335px;
+        top: -200px;
         width: 100px;
         text-align: center;
         padding: 1px;
@@ -548,6 +571,8 @@ a {
     .title {
         font-size: 1.5em;
         letter-spacing: 10px;
+        position: relative;
+        top: 30px;
     }
 
     .all_cont {
@@ -558,15 +583,15 @@ a {
 
     .map {
         width: 300px;
-        height: 200px;
+        height: 300px;
         margin: auto;
+        margin-top: 100px;
 
     }
 
     .map img {
         width: 298px;
-        height: 160px;
-
+        height: 250px;
     }
 
 
@@ -586,6 +611,7 @@ a {
         width: fit-content;
         height: 50px;
         margin: auto;
+        margin-top: 10px;
 
 
 
@@ -603,7 +629,7 @@ a {
         margin-top: 8px;
         width: fit-content;
         height: fit-content;
-        font-size: 30px;
+        font-size: 40px;
 
     }
 
@@ -614,19 +640,19 @@ a {
     }
 
     .social .phone {
-        top: 0;
+        top: 30px;
         left: 0;
-        width: 150px;
-        height: 100px;
+        width: 200px;
+        height: 160px;
     }
 
     .social .phone i {
         padding-top: 10px;
-        font-size: 30px;
+        font-size: 60px;
     }
 
     .social .phone p {
-        font-size: 15px;
+        font-size: 22px;
     }
 
     .social .phone a {
